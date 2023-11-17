@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+body{
+  background: #000000;
+  color: white;
+}
+p{
+  cursor: default;
+}
+
+.homemaincontainer{
+    display: grid;
+    grid-template-columns: 14rem auto 14rem;
+    height: 100vh;
+}
+
+@media screen and (max-width:1280px){
+  .homemaincontainer{
+
+    grid-template-columns: 5rem auto 14rem;
+  }
+}
+
+@media screen and (max-width:765px){
+  .homemaincontainer{
+
+    grid-template-columns: 1fr;
+  }
+}
